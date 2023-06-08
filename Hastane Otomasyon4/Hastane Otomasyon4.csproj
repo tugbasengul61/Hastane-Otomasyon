@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8DE8F359-425C-4AE9-9BD7-72DF0917D063}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Hastane_Otomasyon4</RootNamespace>
+    <AssemblyName>Hastane Otomasyon4</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneOtomasyonDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneOtomasyonDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneOtomasyonDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HastaneOtomasyonDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HastaneOtomasyonDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Randevu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Randevu.Designer.cs">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sifredegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifredegistir.Designer.cs">
+      <DependentUpon>sifredegistir.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Randevu.resx">
+      <DependentUpon>Randevu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sifredegistir.resx">
+      <DependentUpon>sifredegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="HastaneOtomasyonDataSet.xsc">
+      <DependentUpon>HastaneOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonDataSet.xss">
+      <DependentUpon>HastaneOtomasyonDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonDataSet1.xsc">
+      <DependentUpon>HastaneOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonDataSet1.xss">
+      <DependentUpon>HastaneOtomasyonDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonDataSet2.xsc">
+      <DependentUpon>HastaneOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonDataSet2.xss">
+      <DependentUpon>HastaneOtomasyonDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonDataSet3.xsc">
+      <DependentUpon>HastaneOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="HastaneOtomasyonDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>HastaneOtomasyonDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="HastaneOtomasyonDataSet3.xss">
+      <DependentUpon>HastaneOtomasyonDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet.hasta1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet.hasta1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet.hasta1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet.hasta1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet1.hasta1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet1.hasta1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet1.hasta1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet1.hasta1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Admin1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Admin1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Admin1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Admin1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Doktor1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Doktor1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Doktor1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Doktor1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.hasta1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.hasta1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.hasta1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.hasta1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.illerDataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.illerRow.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.illerRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.illerRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Klini1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Klini1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Klini1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Klini1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Randevu1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Randevu1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Randevu1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet2.Randevu1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Admin1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Admin1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Admin1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Admin1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Doktor1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Doktor1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Doktor1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Doktor1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.hasta1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.hasta1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.hasta1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.hasta1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.illerDataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.illerRow.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.illerRowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.illerRowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Klini1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Klini1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Klini1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Klini1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Randevu1DataTable.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Randevu1Row.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Randevu1RowChangeEvent.datasource" />
+    <None Include="Properties\DataSources\HastaneOtomasyonDataSet3.Randevu1RowChangeEventHandler.datasource" />
+    <None Include="Properties\DataSources\Hastane_Otomasyon4.HastaneOtomasyonDataSet3TableAdapters.Randevu1TableAdapter.datasource" />
+    <None Include="Properties\DataSources\Hastane_Otomasyon4.HastaneOtomasyonDataSet3TableAdapters.TableAdapterManager+UpdateOrderOption.datasource" />
+    <None Include="Properties\DataSources\Randevu.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12345.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\0909.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\00.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\88.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\889.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\90.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
