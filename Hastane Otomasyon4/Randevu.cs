@@ -46,6 +46,7 @@ namespace Hastane_Otomasyon4
                 cmbdoktor.ValueMember = "Doktorid";
                 cmbdoktor.DisplayMember = "DoktorAd";
                 cmbdoktor.DataSource = dt;
+
             }
         }
 
